@@ -1,0 +1,127 @@
+/* --- Global Style --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #0d0d0d;
+    color: #e5e5e5;
+    display: flex;
+}
+
+/* Neon blue accent */
+:root {
+    --neon: #00e5ff;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #111;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+    border-right: 2px solid #222;
+    transition: 0.3s ease;
+}
+
+.sidebar-logo {
+    text-align: center;
+}
+
+.sidebar-logo img {
+    width: 80px;
+    filter: drop-shadow(0 0 8px var(--neon));
+}
+
+.sidebar-logo h2 {
+    color: var(--neon);
+    margin: 10px 0;
+    text-shadow: 0 0 10px var(--neon);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.sidebar-menu li {
+    margin: 20px 0;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: #aaa;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.2s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu .active {
+    color: var(--neon);
+    text-shadow: 0 0 10px var(--neon);
+}
+
+/* --- Content Area --- */
+.content {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Header */
+#toggleSidebar {
+    font-size: 24px;
+    color: var(--neon);
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-shadow: 0 0 10px var(--neon);
+}
+
+/* --- Hero Section --- */
+.hero {
+    margin-top: 60px;
+}
+
+.hero h2 {
+    color: var(--neon);
+    font-size: 2rem;
+    text-shadow: 0 0 20px var(--neon);
+}
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: var(--neon);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 0 15px var(--neon);
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--neon);
+}
+
+/* --- About Page --- */
+.about-section h2 {
+    color: var(--neon);
+    text-shadow: 0 0 10px var(--neon);
+}
+
+/* Sidebar collapsed mode */
+.sidebar.collapsed {
+    width: 0;
+    overflow: hidden;
+}
+
+.sidebar.collapsed + .content {
+    margin-left: 0;
+}
