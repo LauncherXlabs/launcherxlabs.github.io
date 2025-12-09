@@ -10,30 +10,35 @@
 </head>
 
 <body>
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Sidebar -->
     <div class="sidebar" id="sidebar">
-        <div class="sidebar-logo">
-            <img src="logo.png" alt="LauncherXLabs Logo">
+        <div class="sidebar-header">
             <h2>LauncherXLabs</h2>
+            <button id="closeSidebar" class="close-btn">✕</button>
         </div>
 
         <ul class="sidebar-menu">
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
 
+    <!-- Main Content -->
     <div class="content">
         <header>
-            <button id="toggleSidebar">☰</button>
+            <button id="openSidebar" class="open-btn">☰</button>
             <h1>Welcome to LauncherXLabs</h1>
         </header>
 
         <section class="hero">
             <h2>Innovation. Speed. Future.</h2>
-            <p>LauncherXLabs builds modern digital tools and software solutions.</p>
-            <a href="#projects" class="btn-primary">Explore Projects</a>
+            <p>LauncherXLabs builds advanced digital tools and software solutions.</p>
+            <a href="#" class="btn">Explore Projects</a>
         </section>
     </div>
 </body>
