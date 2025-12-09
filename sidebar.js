@@ -1,9 +1,13 @@
-// Toggle Sidebar for mobile or small screens
 document.addEventListener("DOMContentLoaded", () => {
     const sidebar = document.getElementById("sidebar");
-    const toggleBtn = document.getElementById("toggleSidebar");
+    const openBtn = document.getElementById("openSidebar");
+    const closeBtn = document.getElementById("closeSidebar");
 
-    toggleBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("collapsed");
+    openBtn.addEventListener("click", () => {
+        sidebar.classList.add("open");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("open");
     });
 });
